@@ -1,0 +1,14 @@
+Test Haibu con Python y Flask
+==============================
+
+Version
+1.0.0
+
+En esta prueba se desarrollo una API RESTfull para responder a peticiones
+web, esta compuesta por dos endpoint, uno para la generación de patentes en
+base a un id y  otro para calcular la sumatoria de una matriz.
+Se uso Pipenv como manejador de dependencias que permite crear ambientes privados
+para el desarrollo de aplicaciones.
+
+Esta prueba esta construida por módulos, uno principal "app" que contiene la
+aplicación principal y un submodulo que contiene la clases utilizadas.

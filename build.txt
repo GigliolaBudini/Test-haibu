@@ -1,0 +1,31 @@
+RESTful APIs con Python y Flask
+
+
+Ejecutar la API
+
+Para ejecutar esta aplicación, es necesario Python 3+ y
+[Pipenv](https://pipenv.readthedocs.io/en/latest/) instalados localmente.
+Si es así, puedes ejecutar los siguientes comandos:
+
+
+Desde el directorio test-haibu-python
+pipenv install
+sh ./bootstrap.sh
+
+Luego es posible generar peticiones a la API. Por ejemplo, con `curl`,
+se pueden hacer peticiones de la siguiente forma:
+
+Creando una nueva matriz
+curl -X POST -H "Content-Type: application/json" -d '{
+    "r": 5,
+    "c": 4,
+    "z": 2,
+    "x": 1,
+    "y": 2
+}' http://localhost:5000/matriz
+
+Consultar patente por id
+curl http://localhost:5000/patentes/1000
+
+
+### Version 1.0.0

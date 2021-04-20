@@ -1,0 +1,10 @@
+# Requerimientos
+
+Python 3+
+Pip
+Flask Framework
+
+# Manejador de Dependecias
+
+Pipenv(https://pipenv.readthedocs.io/en/latest/)
+consultar Pipfile.lock para información mas detallada.
