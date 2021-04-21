@@ -3,6 +3,7 @@
 Python 3+
 Pip
 Flask Framework
+unittest
 
 # Manejador de Dependecias
 

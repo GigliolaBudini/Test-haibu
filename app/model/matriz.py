@@ -6,21 +6,27 @@ class Matriz():
         self.matriz = []
 
     def crear_matriz(self):
-        assert self.z > 0 and self.z < 1000000
+        if not (0 < self.z <= 1000000):
+            raise Exception('Parametro z esta fuera de rango')
+        if not type(self.r)==int and type(self.c)==int:  
+            raise Exception('Los parametros z y c deben ser de tipo enteros')
 
         for i in range(1,self.r+1):
             if i == 1:
-                n = self.z
+                num = self.z
             else:
-              n = i + self.z -1
+               num = i + self.z -1
 
             fila = []
             for e in range(1,self.c+1):
-                fila.append(n)
+                fila.append(num)
 
             self.matriz.append(fila)
 
     def sumar_matriz(self,x,y):
+        if type(x) is not int and type(y) is not int:
+            raise Exception('Los parametros deben ser tipo enteros')
+
         total = 0
 
         for i in range(y+1):

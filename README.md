@@ -8,6 +8,7 @@ coordenadas. Este proyecto esta construido con Python 3 y su framework Flask.
 
 Para ejecutar esta aplicación, es necesario Python 3+ y
 [Pipenv](https://pipenv.readthedocs.io/en/latest/) instalados localmente.
+
 Si es así, puedes ejecutar los siguientes comandos:
 
 ```bash
@@ -32,6 +33,11 @@ curl -X POST -H "Content-Type: application/json" -d '{
 # Consultar patente por id
 curl http://localhost:5000/patentes/1000
 ```
+## Ejecutando las pruebas unitarias
+---
+* Abrir consola de comandos y entrar en la ruta del proyecto, "/test-haibu-python/app"
+* Para modulo patente, ejecutar $ python test_unit_patente.py
+* Para modulo matriz, ejecutar $ python test_unit_matriz.py
 
 ### Construido con
 * [flask](https://flask.palletsprojects.com/en/1.1.x/) - El framework web usado
