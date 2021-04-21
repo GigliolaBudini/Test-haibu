@@ -23,5 +23,7 @@ class TestUnitarios(unittest.TestCase):
     def test_crear_patente_exc(self):
         self.assertRaises(Exception,self.patente.llenar_num,'874434j')
 
+
+
 if __name__ == "__main__":
     unittest.main()
